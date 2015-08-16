@@ -264,7 +264,7 @@ namespace RestSharp
                 webRequest.ContentLength = 0;
             }
 
-            webRequest.AutomaticDecompression = DecompressionMethods.Deflate | DecompressionMethods.GZip | DecompressionMethods.None;
+            webRequest.AutomaticDecompression = DecompressionMethods.None;
 
 #if FRAMEWORK
             if (this.ClientCertificates != null)
