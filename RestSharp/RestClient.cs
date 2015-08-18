@@ -272,9 +272,9 @@ namespace RestSharp
 
         private readonly Regex structuredSyntaxSuffixWildcardRegex = new Regex(@"^\*\+\w+$");
 #else
-        private readonly Regex structuredSyntaxSuffixRegex = new Regex(@"\+\w+$", RegexOptions.Compiled);
+        private readonly Regex structuredSyntaxSuffixRegex = new Regex(@"\+\w+$");
 
-        private readonly Regex structuredSyntaxSuffixWildcardRegex = new Regex(@"^\*\+\w+$", RegexOptions.Compiled);
+        private readonly Regex structuredSyntaxSuffixWildcardRegex = new Regex(@"^\*\+\w+$");
 #endif
 
         private void AuthenticateIfNeeded(RestClient client, IRestRequest request)
